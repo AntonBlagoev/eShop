@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "eShop.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/eShop.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eShop.Common.dll": {}
+        }
+      },
+      "eShop.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "eShop.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/eShop.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eShop.Web.ViewModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "eShop.Common/1.0.0": {
+      "type": "project",
+      "path": "../eShop.Common/eShop.Common.csproj",
+      "msbuildProject": "../eShop.Common/eShop.Common.csproj"
+    },
+    "eShop.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../eShop.Web.ViewModels/eShop.Web.ViewModels.csproj",
+      "msbuildProject": "../eShop.Web.ViewModels/eShop.Web.ViewModels.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "eShop.Web.ViewModels >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\anton\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj",
+      "projectName": "eShop.Services.Data.Models",
+      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj",
+      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
+      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

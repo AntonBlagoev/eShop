@@ -1,0 +1,12 @@
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\bin\Debug\net6.0\eShop.Common.deps.json
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\bin\Debug\net6.0\eShop.Common.dll
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\bin\Debug\net6.0\eShop.Common.pdb
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\eShop.Common.csproj.AssemblyReference.cache
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\eShop.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\eShop.Common.AssemblyInfoInputs.cache
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\eShop.Common.AssemblyInfo.cs
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\eShop.Common.csproj.CoreCompileInputs.cache
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\eShop.Common.dll
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\refint\eShop.Common.dll
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\eShop.Common.pdb
+D:\Dev\SoftUni\Projects\eShop\eShop.Common\obj\Debug\net6.0\ref\eShop.Common.dll

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "eShop.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "eShop.Common": "1.0.0"
+        },
+        "runtime": {
+          "eShop.Web.ViewModels.dll": {}
+        }
+      },
+      "eShop.Common/1.0.0": {
+        "runtime": {
+          "eShop.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "eShop.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "eShop.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

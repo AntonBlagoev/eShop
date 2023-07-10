@@ -1,0 +1,15 @@
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\bin\Debug\net6.0\eShop.Web.ViewModels.deps.json
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\bin\Debug\net6.0\eShop.Web.ViewModels.dll
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\bin\Debug\net6.0\eShop.Web.ViewModels.pdb
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\bin\Debug\net6.0\eShop.Common.dll
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\bin\Debug\net6.0\eShop.Common.pdb
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\eShop.Web.ViewModels.csproj.AssemblyReference.cache
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\eShop.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\eShop.Web.ViewModels.AssemblyInfoInputs.cache
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\eShop.Web.ViewModels.AssemblyInfo.cs
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\eShop.Web.ViewModels.csproj.CoreCompileInputs.cache
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\eShop.Web.ViewModels.csproj.CopyComplete
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\eShop.Web.ViewModels.dll
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\refint\eShop.Web.ViewModels.dll
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\eShop.Web.ViewModels.pdb
+D:\Dev\SoftUni\Projects\eShop\eShop.Web.ViewModels\obj\Debug\net6.0\ref\eShop.Web.ViewModels.dll
