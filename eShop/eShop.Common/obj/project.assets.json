@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj",
+      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj",
       "projectName": "eShop.Common",
-      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj",
+      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj",
       "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\obj\\",
+      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -2227,11 +2227,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data\\eShop.Data.csproj",
+      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data\\eShop.Data.csproj",
       "projectName": "eShop.Data",
-      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data\\eShop.Data.csproj",
+      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data\\eShop.Data.csproj",
       "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data\\obj\\",
+      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2248,11 +2248,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj": {
-              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj"
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj"
             },
-            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj": {
-              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj"
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj"
             }
           }
         }

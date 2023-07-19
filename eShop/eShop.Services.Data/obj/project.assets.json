@@ -2183,11 +2183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data\\eShop.Services.Data.csproj",
+      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data\\eShop.Services.Data.csproj",
       "projectName": "eShop.Services.Data",
-      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data\\eShop.Services.Data.csproj",
+      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data\\eShop.Services.Data.csproj",
       "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data\\obj\\",
+      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2204,20 +2204,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj": {
-              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj"
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj"
             },
-            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj": {
-              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj"
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj"
             },
-            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data\\eShop.Data.csproj": {
-              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data\\eShop.Data.csproj"
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data\\eShop.Data.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data\\eShop.Data.csproj"
             },
-            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj": {
-              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj"
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj"
             },
-            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj": {
-              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj"
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj"
             }
           }
         }

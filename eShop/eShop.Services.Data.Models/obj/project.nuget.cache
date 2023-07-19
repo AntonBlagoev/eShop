@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+zZlFlRxaJ9TRdZR4jcI+fL5/LNstkXC+MFSeWBvEpvRqsfYcLH9mG9D+ofJRzMoeD5bAZerHsZ3N+pKHwc75Q==",
+  "dgSpecHash": "fxtP0WpTPrN5PI4duGQTIwVglGu2W8Evt0hO262YsoAU+f5KNl49qnItNNeQmvdaQr9DwYeFAIOvUtwt0zNECw==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj",
+  "projectFilePath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

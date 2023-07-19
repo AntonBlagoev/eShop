@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tUBtB2pRP5KDvoeLY8lkcLQElRAPBGBc4HJ0i4Mfoxi2UO5++ckQcNxcVmKSyv8tLEIfkNGtnTWcLe+WW55OHQ==",
+  "dgSpecHash": "K/KuJhowRl/SBoWfbS+thTxtvyeEbfLpbenM+txnhVBwT3/65WTXhU3ePV6tz+C2sSV+ofODI1u1PFDTAr+Q0Q==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Web.Infrastructure\\eShop.Web.Infrastructure.csproj",
+  "projectFilePath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web.Infrastructure\\eShop.Web.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.13\\microsoft.aspnetcore.cryptography.internal.6.0.13.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.13\\microsoft.aspnetcore.cryptography.keyderivation.6.0.13.nupkg.sha512",

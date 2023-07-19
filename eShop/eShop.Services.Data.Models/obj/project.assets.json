@@ -50,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj",
+      "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj",
       "projectName": "eShop.Services.Data.Models",
-      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj",
+      "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data.Models\\eShop.Services.Data.Models.csproj",
       "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Services.Data.Models\\obj\\",
+      "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Services.Data.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,8 +71,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj": {
-              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj"
+            "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj": {
+              "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web.ViewModels\\eShop.Web.ViewModels.csproj"
             }
           }
         }

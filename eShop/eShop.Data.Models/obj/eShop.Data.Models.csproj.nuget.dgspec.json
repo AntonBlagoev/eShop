@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj": {}
+    "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj": {
+    "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj",
+        "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj",
         "projectName": "eShop.Common",
-        "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj",
+        "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj",
         "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\obj\\",
+        "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj": {
+    "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj",
+        "projectUniqueName": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj",
         "projectName": "eShop.Data.Models",
-        "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj",
+        "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\eShop.Data.Models.csproj",
         "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Data.Models\\obj\\",
+        "outputPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj": {
-                "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop.Common\\eShop.Common.csproj"
+              "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj": {
+                "projectPath": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Common\\eShop.Common.csproj"
               }
             }
           }
