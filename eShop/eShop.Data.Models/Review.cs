@@ -1,8 +1,8 @@
 ﻿namespace eShop.Data.Models
 {
-    using Microsoft.AspNetCore.Identity;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+
     using static Common.EntityValidationConstants.Review;
 
     public class Review
@@ -11,15 +11,16 @@
         public int Id { get; set; }
 
         [Required]
+        [ForeignKey(nameof(UserId))]
         public Guid UserId { get; set; }
 
         public virtual ApplicationUser User { get; set; } = null!;
 
         [Required]
+        [ForeignKey(nameof(ProductId))]
         public int ProductId { get; set; }
 
         [Required]
-        [ForeignKey(nameof(ProductId))]
         public Product Product { get; set; } = null!;
 
         [Required]
@@ -31,6 +32,7 @@
         public string? Content { get; set; }
 
         [MaxLength(ImageUrlMaxLength)]
+        [Display(Name = "Image Url")]
         public string? ImageUrl { get; set; }
 
         public DateTime Date { get; set; }

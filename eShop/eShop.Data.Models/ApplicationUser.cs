@@ -17,6 +17,9 @@
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
         public string Address { get; set; } = null!;
+        public string City { get; set; } = null!;
+        public string PostalCode { get; set; } = null!;
+        public string Phone { get; set; } = null!;
 
         public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<Favorite> Favorites { get; set; }

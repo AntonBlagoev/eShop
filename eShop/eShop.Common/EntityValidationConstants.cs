@@ -20,6 +20,10 @@
             public const int DescriptionMaxLength = 2000;
 
             public const int ImageUrlMaxLength = 200;
+
+            public const int WarrantyMinValue = 0;
+            public const int WarrantyMaxValue = 5;
+
         }
 
         public static class Review
@@ -32,6 +36,17 @@
             public const int ImageUrlMaxLength = 200;
         }
 
+        public static class CartItem
+        {
+            public const int QuantityMinValue = 0;
+            public const int QuantityMaxValue = 100;
 
+        }
+
+        public static class Order
+        {
+            public const int NoteMaxLength = 200;
+
+        }
     }
 }

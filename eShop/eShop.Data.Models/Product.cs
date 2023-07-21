@@ -1,8 +1,8 @@
 ﻿namespace eShop.Data.Models
 {
-    using Microsoft.EntityFrameworkCore;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+
     using static Common.EntityValidationConstants.Product;
 
     public class Product
@@ -23,22 +23,27 @@
 
         [Required]
         [MaxLength(DescriptionMaxLength)]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; } = null!;
 
         [Required]
+        [Range(WarrantyMinValue, WarrantyMaxValue)]
         public int Warranty { get; set; }
 
+        [MaxLength(ImageUrlMaxLength)]
+        [Display(Name = "Image Path")]
+        public string? ImagePath { get; set; }
+
+        public double? Price { get; set; }
+       
         [Required]
+        [ForeignKey(nameof(CategoryId))]
         public int CategoryId { get; set; }
 
         [Required]
-        [ForeignKey(nameof(CategoryId))]
-        public Category Category { get; set; } = null!;
+        public virtual Category Category { get; set; } = null!;
 
-        [MaxLength(ImageUrlMaxLength)]
-        public string? ImageUrl { get; set; }
-
-        public double Price { get; set; }
+        public bool IsAvailable { get; set; }
 
         public virtual ICollection<Review> Reviews { get; set; }
 
