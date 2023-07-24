@@ -18,9 +18,8 @@
         [MaxLength(NameMaxLength)]
         public string Name { get; set; } = null!;
 
-        [Required]
         [StringLength(DescriptionMaxLength)]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
     }

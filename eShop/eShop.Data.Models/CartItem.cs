@@ -21,14 +21,7 @@
         [Required]
         public virtual Product Product { get; set; } = null!;
 
-        [Required]
-        [ForeignKey(nameof(CartId))]
-        public string CartId { get; set; } = null!;
-
-        [Required]
         public virtual Cart Cart { get; set; } = null!;
-
-
 
     }
 }

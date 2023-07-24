@@ -43,7 +43,7 @@
         [Required]
         public virtual Category Category { get; set; } = null!;
 
-        public bool IsAvailable { get; set; }
+        public bool IsAvailable { get; set; } = true;
 
         public virtual ICollection<Review> Reviews { get; set; }
 

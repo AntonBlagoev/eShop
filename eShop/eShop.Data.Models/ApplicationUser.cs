@@ -2,6 +2,8 @@
 {
     using Microsoft.AspNetCore.Identity;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using static Common.EntityValidationConstants.ApplicationUser;
 
     public class ApplicationUser : IdentityUser<Guid>
     {
@@ -14,12 +16,25 @@
             this.Reviews = new HashSet<Review>();
         }
 
+        [Required]
+        [StringLength(FirstNameMaxLength)]
         public string FirstName { get; set; } = null!;
+
+        [Required]
+        [StringLength(LastNameMaxLength)]
         public string LastName { get; set; } = null!;
+
+        [Required]
+        [StringLength(AddressMaxLength)]
         public string Address { get; set; } = null!;
+
+        [Required]
+        [StringLength(CityMaxLength)]
         public string City { get; set; } = null!;
+
+        [Required]
+        [StringLength(PostalCodeMaxLength)]
         public string PostalCode { get; set; } = null!;
-        public string Phone { get; set; } = null!;
 
         public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<Favorite> Favorites { get; set; }

@@ -3,7 +3,7 @@
     using Microsoft.AspNetCore.Mvc;
     using System.Diagnostics;
 
-    using eShop.Web.ViewModels.Home;
+    using ViewModels.Home;
 
     public class HomeController : Controller
     {

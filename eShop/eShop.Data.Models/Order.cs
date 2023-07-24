@@ -16,12 +16,12 @@
         [StringLength(NoteMaxLength)]
         public string Note { get; set; } = null!;
 
-        [Required]
-        [ForeignKey(nameof(CartId))]
-        public Guid CartId { get; set; }
+        public decimal? TotalPrice { get; set; }
+
+        public DateTime CreationDate { get; set; }
 
         [Required]
-        public Cart Cart { get; set; } = null!;
+        public OrderState OrderState { get; set; }
 
         [Required]
         [ForeignKey(nameof(UserId))]
@@ -30,9 +30,6 @@
         [Required]
         public virtual ApplicationUser User { get; set; } = null!;
 
-        public DateTime CreationDate { get; set; }
-
-        [Required]
-        public OrderState OrderState { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; } = null!;
     }
 }

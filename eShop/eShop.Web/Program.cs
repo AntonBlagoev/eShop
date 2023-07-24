@@ -11,7 +11,7 @@ namespace eShop
         {
             WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-            var connectionString = 
+            string connectionString = 
                 builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
            
             builder.Services.AddDbContext<eShopDbContext>(options =>

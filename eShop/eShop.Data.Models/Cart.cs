@@ -14,8 +14,9 @@
         [Key]
         public Guid Id { get; set; }
 
-        [Required]
-        public decimal TotalPrice { get; set; }
+        public decimal? TotalPrice { get; set; }
+
+        public bool IsActive { get; set; }
 
         [Required]
         [ForeignKey(nameof(UserId))]
@@ -23,8 +24,6 @@
 
         [Required]
         public virtual ApplicationUser User { get; set; } = null!;
-
-        public bool IsOrdered { get; set; }
 
         public virtual ICollection<CartItem> CartItems { get; set; }
 
