@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\21-5-acer-v226hqlbbi-433345.jpg"
     },
     {
+      "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\23-8-lenovo-d24-40-67a2kac6eu-438170.jpg",
+      "PackagePath": "staticwebassets\\images\\23-8-lenovo-d24-40-67a2kac6eu-438170.jpg"
+    },
+    {
       "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\23-8-philips-243v7qdsb-337418.jpg",
       "PackagePath": "staticwebassets\\images\\23-8-philips-243v7qdsb-337418.jpg"
     },
@@ -69,6 +73,10 @@
       "PackagePath": "staticwebassets\\images\\asus-rog-strix-gt15-g15cf-432083.jpg"
     },
     {
+      "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\brother-hl-1222we-laser-printer-179988.jpg",
+      "PackagePath": "staticwebassets\\images\\brother-hl-1222we-laser-printer-179988.jpg"
+    },
+    {
       "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\canon-pixma-g1430-473878.jpg",
       "PackagePath": "staticwebassets\\images\\canon-pixma-g1430-473878.jpg"
     },
@@ -95,6 +103,10 @@
     {
       "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\hp-16-d1000-404950.jpg",
       "PackagePath": "staticwebassets\\images\\hp-16-d1000-404950.jpg"
+    },
+    {
+      "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\hp-color-laserjet-pro-m454dw-printer-235409.jpg",
+      "PackagePath": "staticwebassets\\images\\hp-color-laserjet-pro-m454dw-printer-235409.jpg"
     },
     {
       "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\hp-laserjet-m110we-455714.jpg",

@@ -9,14 +9,19 @@
 
     public class Order
     {
+        public Order()
+        {
+            this.Id = Guid.NewGuid();
+            this.OrderItems = new HashSet<OrderItem>();
+        }
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         [StringLength(NoteMaxLength)]
         public string Note { get; set; } = null!;
 
-        public decimal? TotalPrice { get; set; }
+        public double? TotalPrice { get; set; }
 
         public DateTime CreationDate { get; set; }
 

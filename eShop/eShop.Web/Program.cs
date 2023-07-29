@@ -4,6 +4,8 @@ namespace eShop
 
     using eShop.Data;
     using eShop.Data.Models;
+    using eShop.Services.Data;
+    using eShop.Services.Data.Interfaces;
 
     public class Program
     {
@@ -11,9 +13,9 @@ namespace eShop
         {
             WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-            string connectionString = 
+            string connectionString =
                 builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-           
+
             builder.Services.AddDbContext<eShopDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
@@ -32,6 +34,7 @@ namespace eShop
                 })
                 .AddEntityFrameworkStores<eShopDbContext>();
 
+            builder.Services.AddScoped<IProductService, ProductService>();
 
             builder.Services.AddControllersWithViews();
 

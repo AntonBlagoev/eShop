@@ -3,6 +3,7 @@
     using Microsoft.AspNetCore.Identity;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+
     using static Common.EntityValidationConstants.ApplicationUser;
 
     public class ApplicationUser : IdentityUser<Guid>

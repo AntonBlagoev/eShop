@@ -180,3 +180,4 @@ D:\Dev\SoftUni\Projects\eShop\eShop\eShop.Web\obj\Debug\net6.0\refint\eShop.Web.
 D:\Dev\SoftUni\Projects\eShop\eShop\eShop.Web\obj\Debug\net6.0\eShop.Web.pdb
 D:\Dev\SoftUni\Projects\eShop\eShop\eShop.Web\obj\Debug\net6.0\eShop.Web.genruntimeconfig.cache
 D:\Dev\SoftUni\Projects\eShop\eShop\eShop.Web\obj\Debug\net6.0\ref\eShop.Web.dll
+D:\Dev\SoftUni\Projects\eShop\eShop\eShop.Web\bin\Debug\net6.0\appsettings.Production.json

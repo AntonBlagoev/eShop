@@ -30,9 +30,10 @@
         [Range(WarrantyMinValue, WarrantyMaxValue)]
         public int Warranty { get; set; }
 
+        [Required]
         [MaxLength(ImageUrlMaxLength)]
         [Display(Name = "Image Path")]
-        public string? ImagePath { get; set; }
+        public string ImagePath { get; set; } = null!;
 
         public double? Price { get; set; }
        
@@ -44,6 +45,8 @@
         public virtual Category Category { get; set; } = null!;
 
         public bool IsAvailable { get; set; } = true;
+
+        public DateTime CreatedOn { get; set; }
 
         public virtual ICollection<Review> Reviews { get; set; }
 

@@ -11,7 +11,7 @@
         public int Id { get; set; }
 
         [Required]
-        [Range(QuantityMinValue ,QuantityMaxValue)]
+        [Range(QuantityMinValue, QuantityMaxValue)]
         public int Quantity { get; set; }
 
         [Required]

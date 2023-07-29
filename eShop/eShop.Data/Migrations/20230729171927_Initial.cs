@@ -178,7 +178,7 @@ namespace eShop.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    TotalPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TotalPrice = table.Column<double>(type: "float(18)", precision: 18, scale: 2, nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
@@ -197,10 +197,9 @@ namespace eShop.Data.Migrations
                 name: "Orders",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Note = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    TotalPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TotalPrice = table.Column<double>(type: "float(18)", precision: 18, scale: 2, nullable: true),
                     CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     OrderState = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
@@ -226,7 +225,7 @@ namespace eShop.Data.Migrations
                     Description = table.Column<string>(type: "nvarchar(2000)", maxLength: 2000, nullable: false),
                     Warranty = table.Column<int>(type: "int", nullable: false),
                     ImagePath = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
-                    Price = table.Column<double>(type: "float", nullable: true),
+                    Price = table.Column<double>(type: "float(7)", precision: 7, scale: 2, nullable: true),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -302,7 +301,7 @@ namespace eShop.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     ProductId = table.Column<int>(type: "int", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false)
+                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -371,7 +370,7 @@ namespace eShop.Data.Migrations
                 {
                     { 1, 1, "AMD Ryzen 5 3500U (2.1/3.7 GHz, 4M)\r\nAMD Radeon RX Vega 8\r\n16 GB DDR4\r\n512GB M.2 NVMe SSD\r\n15.6\" Full HD IPS", "images/acer-aspire-3-a315-23-23g-23s-285196.jpg", true, "Acer Aspire 3 A315-23-R7ZD, 15.6\"", 450.0, 24 },
                     { 2, 1, "Intel Core i3-1115G4 (3.0/4.1GHz, 6M)\r\nIntel UHD Graphics Xe G4 48EUs\r\n8 GB DDR4 3200 MHz\r\n500GB M.2 NVMe SSD\r\n17.3\" Full HD IPS", "images/acer-aspire-5-a517-52-52g-369575.jpg", true, "Acer Aspire 5 A517-52-34QX, 17.3\", Full HD", 450.0, 24 },
-                    { 3, 1, "Intel Core i5-1235U (0.9/4.4GHz, 12M)\r\nIntel Iris Xe Graphics\r\n16 GB DDR4 3200 MHz\r\n500GB M.2 NVMe SSD\r\n14\" Full HD IPS", "images/dell-latitude-5430-386927", true, "Dell Latitude 5430, 14.0\", Full HD", 350.0, 24 },
+                    { 3, 1, "Intel Core i5-1235U (0.9/4.4GHz, 12M)\r\nIntel Iris Xe Graphics\r\n16 GB DDR4 3200 MHz\r\n500GB M.2 NVMe SSD\r\n14\" Full HD IPS", "images/dell-latitude-5430-386927", true, "Dell Latitude 5430, 14.0\", Full HD", 350.5, 24 },
                     { 4, 1, "Intel Core i5-1235U (0.9/4.4GHz, 12M)\r\nIntel Iris Xe Graphics\r\n16 GB DDR4 3200 MHz\r\n1TB M.2 NVMe SSD\r\n15.6\" Full HD IPS", "images/hp-15s-fq3000-338974.jpg", true, "HP 15s-fq5010nu, 15.6\", Full HD", 550.0, 24 },
                     { 5, 1, "Intel Core i5-12500H (1.8/4.5GHz, 18M)\r\nNVIDIA RTX 3060 6GB\r\n16 GB DDR5 4800 MHz\r\n512GB M.2 NVMe SSD\r\n16.1\" Full HD IPS ", "images/hp-16-d1000-404950.jpg", true, "HP Victus 16-d1004nu, 16.1\", Full HD", 420.0, 24 },
                     { 6, 1, "AMD Ryzen 5 5625U (2.3/4.3GHz, 16MB)\r\nAMD Radeon RX Vega 7\r\n8 GB DDR4 3200 MHz\r\n256GB M.2 NVMe SSD\r\n15.6\" Full HD TN", "images/lenovo-v15-g3-432234.jpg", true, "Lenovo V15 G3 ABA, 15.6\", Full HD", 500.0, 24 },

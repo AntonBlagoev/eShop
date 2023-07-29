@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VAPe366TFH1oKmaZn/Hrs5WcfhudSxSRoXAmxnJrtog=",
+  "Hash": "bYKOgwztxW/zekHJW7RbqMyeZ9DdOw5DgJmaajMlOVI=",
   "Source": "eShop.Web",
   "BasePath": "_content/eShop.Web",
   "Mode": "Default",
@@ -1139,6 +1139,23 @@
       "OriginalItemSpec": "wwwroot\\images\\21-5-acer-v226hqlbbi-433345.jpg"
     },
     {
+      "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\23-8-lenovo-d24-40-67a2kac6eu-438170.jpg",
+      "SourceId": "eShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\",
+      "BasePath": "_content/eShop.Web",
+      "RelativePath": "images/23-8-lenovo-d24-40-67a2kac6eu-438170.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\23-8-lenovo-d24-40-67a2kac6eu-438170.jpg"
+    },
+    {
       "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\23-8-philips-243v7qdsb-337418.jpg",
       "SourceId": "eShop.Web",
       "SourceType": "Discovered",
@@ -1343,6 +1360,23 @@
       "OriginalItemSpec": "wwwroot\\images\\asus-rog-strix-gt15-g15cf-432083.jpg"
     },
     {
+      "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\brother-hl-1222we-laser-printer-179988.jpg",
+      "SourceId": "eShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\",
+      "BasePath": "_content/eShop.Web",
+      "RelativePath": "images/brother-hl-1222we-laser-printer-179988.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\brother-hl-1222we-laser-printer-179988.jpg"
+    },
+    {
       "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\canon-pixma-g1430-473878.jpg",
       "SourceId": "eShop.Web",
       "SourceType": "Discovered",
@@ -1460,6 +1494,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\hp-16-d1000-404950.jpg"
+    },
+    {
+      "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\hp-color-laserjet-pro-m454dw-printer-235409.jpg",
+      "SourceId": "eShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\",
+      "BasePath": "_content/eShop.Web",
+      "RelativePath": "images/hp-color-laserjet-pro-m454dw-printer-235409.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hp-color-laserjet-pro-m454dw-printer-235409.jpg"
     },
     {
       "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\hp-laserjet-m110we-455714.jpg",

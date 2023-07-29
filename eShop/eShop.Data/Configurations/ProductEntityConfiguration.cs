@@ -1,14 +1,23 @@
 ﻿namespace eShop.Data.Configurations
 {
-    using eShop.Data.Models;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-    internal class ProductEntityConfiguration : IEntityTypeConfiguration<Product>
+    using eShop.Data.Models;
+
+    public class ProductEntityConfiguration : IEntityTypeConfiguration<Product>
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.HasData(this.GenerateProducts());
+
+            builder
+                .Property(p => p.Price)
+                .HasPrecision(7, 2);
+
+            builder
+                .Property(p => p.CreatedOn)
+                .HasDefaultValue(DateTime.Now);
         }
 
         private Product[] GenerateProducts()
@@ -23,7 +32,7 @@
                 Description = "AMD Ryzen 5 3500U (2.1/3.7 GHz, 4M)\r\nAMD Radeon RX Vega 8\r\n16 GB DDR4\r\n512GB M.2 NVMe SSD\r\n15.6\" Full HD IPS",
                 Warranty = 24,
                 ImagePath = "images/acer-aspire-3-a315-23-23g-23s-285196.jpg",
-                Price = 450.00,
+                Price = 450,
                 CategoryId = 1
             };
             products.Add(product);
@@ -35,7 +44,7 @@
                 Description = "Intel Core i3-1115G4 (3.0/4.1GHz, 6M)\r\nIntel UHD Graphics Xe G4 48EUs\r\n8 GB DDR4 3200 MHz\r\n500GB M.2 NVMe SSD\r\n17.3\" Full HD IPS",
                 Warranty = 24,
                 ImagePath = "images/acer-aspire-5-a517-52-52g-369575.jpg",
-                Price = 450.00,
+                Price = 450,
                 CategoryId = 1
             };
             products.Add(product);
@@ -46,8 +55,8 @@
                 Name = "Dell Latitude 5430, 14.0\", Full HD",
                 Description = "Intel Core i5-1235U (0.9/4.4GHz, 12M)\r\nIntel Iris Xe Graphics\r\n16 GB DDR4 3200 MHz\r\n500GB M.2 NVMe SSD\r\n14\" Full HD IPS",
                 Warranty = 24,
-                ImagePath = "images/dell-latitude-5430-386927",
-                Price = 350.00,
+                ImagePath = "images/dell-latitude-5430-386927.jpg",
+                Price = 350.50,
                 CategoryId = 1
             };
             products.Add(product);

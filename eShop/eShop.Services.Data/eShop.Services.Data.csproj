@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\eShop.Common\eShop.Common.csproj" />
     <ProjectReference Include="..\eShop.Data.Models\eShop.Data.Models.csproj" />
     <ProjectReference Include="..\eShop.Data\eShop.Data.csproj" />
