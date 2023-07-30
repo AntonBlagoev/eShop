@@ -5,5 +5,6 @@
     public interface ICategoryService
     {
         Task<IEnumerable<ProductSelectCategoryFormModel>> AllCategoriesAsync();
+        Task<bool> ExistByIdAsync(int id);
     }
 }

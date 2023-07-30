@@ -6,6 +6,7 @@ namespace eShop
     using eShop.Data.Models;
     using eShop.Services.Data;
     using eShop.Services.Data.Interfaces;
+    using eShop.Web.Infrastructure.ModelBinders;
 
     public class Program
     {
@@ -37,7 +38,12 @@ namespace eShop
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
 
-            builder.Services.AddControllersWithViews();
+            builder.Services
+                .AddControllersWithViews()
+                .AddMvcOptions(options => 
+                { 
+                    options.ModelBinderProviders.Insert(0, new DecimalModelBinderProvider());
+                });
 
             WebApplication app = builder.Build();
 

@@ -35,7 +35,6 @@
         public string ImagePath { get; set; } = null!;
 
         [Range(typeof(decimal), PriceMinValue, PriceMaxValue)]
-        [RegularExpression(PriceRegExValidator)]
         public decimal Price { get; set; }
        
         [Required]

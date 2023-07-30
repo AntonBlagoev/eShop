@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bYKOgwztxW/zekHJW7RbqMyeZ9DdOw5DgJmaajMlOVI=",
+  "Hash": "7thAL3aVCb+bukw8JE7kwM2JPMkxqz9R+bZs3DbnXzw=",
   "Source": "eShop.Web",
   "BasePath": "_content/eShop.Web",
   "Mode": "Default",
@@ -1715,6 +1715,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\xerox-phaser-3020bi-100185.jpg"
+    },
+    {
+      "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\js\\jquery-override.js",
+      "SourceId": "eShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\",
+      "BasePath": "_content/eShop.Web",
+      "RelativePath": "js/jquery-override.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-override.js"
     },
     {
       "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\js\\site.js",

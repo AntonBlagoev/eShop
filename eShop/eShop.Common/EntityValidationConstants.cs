@@ -27,7 +27,7 @@
 
             public const string PriceMinValue = "0";
             public const string PriceMaxValue = "10000";
-            public const string PriceRegExValidator = @"^\$?\d+(\.(\d{2}))?$";
+            //public const string PriceRegExValidator = @"^\$?\d+(\.(\d{2}))?$";
 
 
         }

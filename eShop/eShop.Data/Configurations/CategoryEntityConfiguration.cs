@@ -56,7 +56,7 @@
             category = new Category()
             {
                 Id = 6,
-                Name = "RAN Memories",
+                Name = "RAM Memories",
             };
             categories.Add(category);
 
