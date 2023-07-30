@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7thAL3aVCb+bukw8JE7kwM2JPMkxqz9R+bZs3DbnXzw=",
+  "Hash": "I7YHIoylCS/kTLDsbWl0jRZ2QOFOvZK6EzHkhn0mnvc=",
   "Source": "eShop.Web",
   "BasePath": "_content/eShop.Web",
   "Mode": "Default",
@@ -1324,6 +1324,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\asus-expertcenter-d5-tower-d500tc-396290.jpg"
+    },
+    {
+      "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\asus-fx506-tuf-gaming-f15-301609.jpg",
+      "SourceId": "eShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\",
+      "BasePath": "_content/eShop.Web",
+      "RelativePath": "images/asus-fx506-tuf-gaming-f15-301609.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\asus-fx506-tuf-gaming-f15-301609.jpg"
     },
     {
       "Identity": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\asus-rog-strix-g35ca-451273.jpg",

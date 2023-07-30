@@ -1,0 +1,23 @@
+﻿@using eShop.Services.Data.Interfaces
+@using eShop.Web.Infrastructure.Extensions
+@model ProductViewModel
+
+
+
+<div class="col-md-4">
+    <div class="card mb-3 align-items-md-center">
+        <img class="card-img-top mt-3" src="@Model.ImagePath" style="width: 16rem" alt="@Model.Name">
+        <div class="card-body text-center">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text">Description: <b>@Model.Description</b></p>
+            <h6>
+                Price:
+                <b>@($"{Model.Price:f2}") EUR</b>
+            </h6>
+            <br />
+            <a asp-controller="Product" asp-action="Details" asp-route-id="@Model.Id"
+               class="btn btn-success">Details</a>
+        </div>
+    </div>
+</div>
+

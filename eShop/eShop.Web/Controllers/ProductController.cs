@@ -1,6 +1,7 @@
 ﻿namespace eShop.Web.Controllers
 {
     using eShop.Services.Data.Interfaces;
+    using eShop.Services.Data.Models.Product;
     using eShop.Web.ViewModels.Product;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
@@ -18,10 +19,17 @@
 
         }
 
+        [HttpGet]
         [AllowAnonymous]
-        public async Task<IActionResult> All()
+        public async Task<IActionResult> All([FromQuery]AllProductsQueryModel queryModel)
         {
-            return this.Ok();
+            AllProductsFilteredAndPagedServiceModel serviceModel = await this.productService.AllAsync(queryModel);
+
+            queryModel.Products = serviceModel.Products;
+            queryModel.TotalProducts = serviceModel.TotalProductsCount;
+            queryModel.Categories = await this.categoryService.AllCategoryNamesAsync();
+
+            return this.View(queryModel);
         }
 
         [HttpGet]
@@ -55,9 +63,9 @@
                 await this.productService.CreateAsync(model);
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                this.ModelState.AddModelError(string.Empty, "Unexpexcted errorq while trying add product.");
+                this.ModelState.AddModelError(string.Empty, "Unexpexcted error, while trying add product.");
                 model.Categories = await this.categoryService.AllCategoriesAsync(); 
                 return View(model);
             }

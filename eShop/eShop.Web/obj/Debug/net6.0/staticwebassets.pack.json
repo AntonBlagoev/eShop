@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\images\\asus-expertcenter-d5-tower-d500tc-396290.jpg"
     },
     {
+      "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\asus-fx506-tuf-gaming-f15-301609.jpg",
+      "PackagePath": "staticwebassets\\images\\asus-fx506-tuf-gaming-f15-301609.jpg"
+    },
+    {
       "Id": "D:\\Dev\\SoftUni\\Projects\\eShop\\eShop\\eShop.Web\\wwwroot\\images\\asus-rog-strix-g35ca-451273.jpg",
       "PackagePath": "staticwebassets\\images\\asus-rog-strix-g35ca-451273.jpg"
     },

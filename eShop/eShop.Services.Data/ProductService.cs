@@ -9,6 +9,8 @@
     using Microsoft.EntityFrameworkCore;
     using eShop.Web.ViewModels.Product;
     using eShop.Data.Models;
+    using eShop.Services.Data.Models.Product;
+    using eShop.Web.ViewModels.Product.Enums;
 
     public class ProductService : IProductService
     {
@@ -52,6 +54,65 @@
             await this.dbContext.SaveChangesAsync();
         }
 
+        public async Task<AllProductsFilteredAndPagedServiceModel> AllAsync(AllProductsQueryModel queryModel)
+        {
+            IQueryable<Product> productsQuery = this.dbContext
+                .Products
+                .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(queryModel.Category))
+            {
+                productsQuery = productsQuery
+                    .Where(p => p.Category.Name == queryModel.Category);
+            }
+
+            if (!string.IsNullOrWhiteSpace(queryModel.SearchString))
+            {
+                string wildCard = $"%{queryModel.SearchString.ToLower()}%";
+
+                productsQuery = productsQuery
+                    .Where(p => EF.Functions.Like(p.Name, wildCard) ||
+                                EF.Functions.Like(p.Description, wildCard));
+            }
+
+            productsQuery = queryModel.ProductSorting switch
+            {
+                ProductSorting.Newest => productsQuery
+                    .OrderByDescending(p => p.CreatedOn),
+                ProductSorting.Oldest => productsQuery
+                    .OrderBy(p => p.CreatedOn),
+                ProductSorting.PriceAscending => productsQuery
+                    .OrderBy(p => p.Price),
+                ProductSorting.PriceDescending => productsQuery
+                    .OrderByDescending(p => p.Price),
+                _ => productsQuery
+                .OrderBy(p => p.IsAvailable == true)
+                .ThenByDescending(p => p.CreatedOn)
+            };
+
+            IEnumerable<ProductViewModel> allProducts = await productsQuery
+                .Where(p => p.IsAvailable == true)
+                .Skip((queryModel.CurrentPage - 1) * queryModel.ProductsPerPage)
+                .Take(queryModel.ProductsPerPage)
+                .Select(p => new ProductViewModel
+                {
+                    Id = p.Id.ToString(),
+                    Name = p.Name,
+                    Description = p.Description,
+                    Warranty = p.Warranty,
+                    ImagePath = p.ImagePath,
+                    Price = p.Price,
+                })
+                .ToArrayAsync();
+
+            int totalProducts = productsQuery.Count();
+
+            return new AllProductsFilteredAndPagedServiceModel()
+            {
+                TotalProductsCount = totalProducts,
+                Products = allProducts
+            };
+        }
 
 
 
