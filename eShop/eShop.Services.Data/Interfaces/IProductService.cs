@@ -14,6 +14,10 @@
 
         Task<ProductDetailsViewModel?> ProductDetailsAsync(string productId);
 
-        
+        Task<bool> ExistByIdAsync(string productId);
+
+        Task<ProductFormModel> GetProductEditByIdAsync(string productId);
+
+        Task EditProductByIdAndFormModelAsync(string productId, ProductFormModel formModel);
     }
 }

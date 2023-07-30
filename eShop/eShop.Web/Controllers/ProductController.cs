@@ -82,20 +82,83 @@
         [AllowAnonymous]
         public async Task<IActionResult> Details(string id)
         {
-            ProductDetailsViewModel? viewModel = await this.productService.ProductDetailsAsync(id);
+            bool productExist = await this.productService.ExistByIdAsync(id);
 
-            if (viewModel == null)
+            if (!productExist)
             {
-                this.TempData["ErrorMessage"] = "Product does not exist!";
-
-                return this.RedirectToAction("All", "Product");
+                return this.NotExistError();
             }
+
+            ProductDetailsViewModel? viewModel = await this.productService.ProductDetailsAsync(id);
 
             return View(viewModel);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+            bool productExist = await this.productService.ExistByIdAsync(id);
+
+            if (!productExist)
+            {
+                return this.NotExistError();
+            }
+
+            try
+            {
+                ProductFormModel formModel = await this.productService.GetProductEditByIdAsync(id);
+                formModel.Categories = await this.categoryService.AllCategoriesAsync();
+
+                return this.View(formModel);
+            }
+            catch (Exception)
+            {
+                return this.UnexpectedError();
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(string id, ProductFormModel model)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                model.Categories = await this.categoryService.AllCategoriesAsync();
+                return this.View(model);
+            }
+
+            bool productExists = await this.productService.ExistByIdAsync(id);
+            if (!productExists)
+            {
+                return this.NotExistError();
+            }
+
+            try
+            {
+                await this.productService.EditProductByIdAndFormModelAsync(id, model);
+            }
+            catch (Exception)
+            {
+                this.ModelState.AddModelError(string.Empty, "Unexpected error occurred while trying to update the product. Please try again later!");
+                model.Categories = await this.categoryService.AllCategoriesAsync();
+
+                return this.View(model);
+            }
+
+            this.TempData["SuccessMessage"] = "Product was edited successfully!";
+            return this.RedirectToAction("Details", "Product", new { id });
+        }
 
 
+        private IActionResult UnexpectedError()
+        {
+            this.TempData["ErrorMessage"] = "Unexpected error occurred! Please try again later!";
+            return this.RedirectToAction("Index", "Home");
+        }
+        private IActionResult NotExistError()
+        {
+            this.TempData["ErrorMessage"] = "Product does not exist!";
+            return this.RedirectToAction("All", "Product");
+        }
 
     }
 }

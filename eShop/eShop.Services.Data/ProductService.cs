@@ -121,12 +121,7 @@
                 .Products
                 .Include(p => p.Category)
                 .Where(p => p.IsAvailable)
-                .FirstOrDefaultAsync(p => p.Id.ToString() == productId);
-
-            if (product == null)
-            {
-                return null;
-            }
+                .FirstAsync(p => p.Id.ToString() == productId);
 
             return new ProductDetailsViewModel
             {
@@ -139,5 +134,54 @@
                 ImagePath = product.ImagePath
             };
         }
+
+        public async Task<bool> ExistByIdAsync(string productId)
+        {
+            bool exist = await this.dbContext
+                .Products
+                .Where(p => p.IsAvailable)
+                .AnyAsync(p => p.Id.ToString() == productId);
+
+            return exist;
+        }
+
+        public async Task<ProductFormModel> GetProductEditByIdAsync(string productId)
+        {
+            Product? product = await this.dbContext
+                .Products
+                .Include(p => p.Category)
+                .Where(p => p.IsAvailable)
+                .FirstAsync(p => p.Id.ToString() == productId);
+
+            return new ProductFormModel
+            {
+                Name = product.Name,
+                Description = product.Description,
+                Warranty = product.Warranty,
+                Price = product.Price,
+                CategoryId = product.CategoryId,
+                ImagePath = product.ImagePath
+            };
+        }
+
+        public async Task EditProductByIdAndFormModelAsync(string productId, ProductFormModel formModel)
+        {
+            Product product = await this.dbContext
+                .Products
+                .Where(p => p.IsAvailable)
+                .FirstAsync(p => p.Id.ToString() == productId);
+
+            product.Name = formModel.Name;
+            product.Description = formModel.Description;
+            product.Warranty = formModel.Warranty;
+            product.ImagePath = formModel.ImagePath;
+            product.Price = formModel.Price;
+            product.CategoryId = formModel.CategoryId;
+
+            await this.dbContext.SaveChangesAsync();
+        }
+
+
+
     }
 }
