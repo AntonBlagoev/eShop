@@ -12,6 +12,8 @@
 
         Task<AllProductsFilteredAndPagedServiceModel> AllAsync(AllProductsQueryModel queryModel);
 
+        Task<ProductDetailsViewModel?> ProductDetailsAsync(string productId);
+
         
     }
 }

@@ -1,10 +1,14 @@
 ﻿namespace eShop.Web.Controllers
 {
-    using eShop.Services.Data.Interfaces;
-    using eShop.Services.Data.Models.Product;
-    using eShop.Web.ViewModels.Product;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
+
+    using Infrastructure.Extensions;
+    using Services.Data.Interfaces;
+    using Services.Data.Models.Product;
+    using ViewModels.Product;
+    using eShop.Common;
+
 
     [Authorize]
     public class ProductController : Controller
@@ -21,7 +25,7 @@
 
         [HttpGet]
         [AllowAnonymous]
-        public async Task<IActionResult> All([FromQuery]AllProductsQueryModel queryModel)
+        public async Task<IActionResult> All([FromQuery] AllProductsQueryModel queryModel)
         {
             AllProductsFilteredAndPagedServiceModel serviceModel = await this.productService.AllAsync(queryModel);
 
@@ -66,7 +70,7 @@
             catch (Exception)
             {
                 this.ModelState.AddModelError(string.Empty, "Unexpexcted error, while trying add product.");
-                model.Categories = await this.categoryService.AllCategoriesAsync(); 
+                model.Categories = await this.categoryService.AllCategoriesAsync();
                 return View(model);
             }
 
@@ -74,7 +78,21 @@
 
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Details(string id)
+        {
+            ProductDetailsViewModel? viewModel = await this.productService.ProductDetailsAsync(id);
 
+            if (viewModel == null)
+            {
+                this.TempData["ErrorMessage"] = "Product does not exist!";
+
+                return this.RedirectToAction("All", "Product");
+            }
+
+            return View(viewModel);
+        }
 
 
 

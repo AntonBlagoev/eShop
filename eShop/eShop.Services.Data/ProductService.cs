@@ -24,6 +24,7 @@
         {
             IEnumerable<IndexViewModel> lastThreeProductsAsync = await this.dbContext
                 .Products
+                .Where(p => p.IsAvailable)
                 .OrderByDescending(p => p.CreatedOn)
                 .Take(10)
                 .Select(p => new IndexViewModel
@@ -91,7 +92,7 @@
             };
 
             IEnumerable<ProductViewModel> allProducts = await productsQuery
-                .Where(p => p.IsAvailable == true)
+                .Where(p => p.IsAvailable)
                 .Skip((queryModel.CurrentPage - 1) * queryModel.ProductsPerPage)
                 .Take(queryModel.ProductsPerPage)
                 .Select(p => new ProductViewModel
@@ -114,8 +115,29 @@
             };
         }
 
+        public async Task<ProductDetailsViewModel?> ProductDetailsAsync(string productId)
+        {
+            Product? product = await this.dbContext
+                .Products
+                .Include(p => p.Category)
+                .Where(p => p.IsAvailable)
+                .FirstOrDefaultAsync(p => p.Id.ToString() == productId);
 
+            if (product == null)
+            {
+                return null;
+            }
 
-
+            return new ProductDetailsViewModel
+            {
+                Id = product.Id.ToString(),
+                Name = product.Name,
+                Description = product.Description,
+                Warranty = product.Warranty,
+                Price = product.Price,
+                Category = product.Category.Name,
+                ImagePath = product.ImagePath
+            };
+        }
     }
 }
