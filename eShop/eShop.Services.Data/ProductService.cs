@@ -20,12 +20,14 @@
             IEnumerable<IndexViewModel> lastThreeProductsAsync = await this.dbContext
                 .Products
                 .OrderByDescending(p => p.CreatedOn)
-                //.Take(6)
+                .Take(10)
                 .Select(p => new IndexViewModel
                 {
                     Id = p.Id.ToString(),
                     Name = p.Name,
-                    ImagePath = p.ImagePath
+                    ImagePath = p.ImagePath,
+                    Description = p.Description,
+                    Price = p.Price.ToString()
                 })
                 .ToArrayAsync();
 

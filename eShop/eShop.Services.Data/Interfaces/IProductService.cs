@@ -5,5 +5,7 @@
     public interface IProductService
     {
         Task<IEnumerable<IndexViewModel>> LastThreeProductsAsync();
+
+        
     }
 }

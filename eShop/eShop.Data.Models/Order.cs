@@ -21,7 +21,7 @@
         [StringLength(NoteMaxLength)]
         public string Note { get; set; } = null!;
 
-        public double? TotalPrice { get; set; }
+        public decimal TotalPrice { get; set; }
 
         public DateTime CreationDate { get; set; }
 

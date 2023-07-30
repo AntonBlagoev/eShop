@@ -35,6 +35,7 @@ namespace eShop
                 .AddEntityFrameworkStores<eShopDbContext>();
 
             builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
 
             builder.Services.AddControllersWithViews();
 

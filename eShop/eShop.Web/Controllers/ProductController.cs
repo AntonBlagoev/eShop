@@ -1,12 +1,27 @@
 ﻿namespace eShop.Web.Controllers
 {
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
 
+    [Authorize]
     public class ProductController : Controller
     {
-        public IActionResult Index()
+        [AllowAnonymous]
+        public async Task<IActionResult> All()
         {
             return View();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Add() 
+        {
+            return View();
+        }
+
+
+
+
+
+
     }
 }

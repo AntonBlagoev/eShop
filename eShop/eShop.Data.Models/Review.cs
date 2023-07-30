@@ -32,7 +32,6 @@
         public string? Content { get; set; }
 
         [MaxLength(ImageUrlMaxLength)]
-        [Display(Name = "Image Url")]
         public string? ImageUrl { get; set; }
 
         public DateTime Date { get; set; }

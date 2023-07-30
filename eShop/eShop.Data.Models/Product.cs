@@ -32,10 +32,11 @@
 
         [Required]
         [MaxLength(ImageUrlMaxLength)]
-        [Display(Name = "Image Path")]
         public string ImagePath { get; set; } = null!;
 
-        public double? Price { get; set; }
+        [Range(typeof(decimal), PriceMinValue, PriceMaxValue)]
+        [RegularExpression(PriceRegExValidator)]
+        public decimal Price { get; set; }
        
         [Required]
         [ForeignKey(nameof(CategoryId))]
