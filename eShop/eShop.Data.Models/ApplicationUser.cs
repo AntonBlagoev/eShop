@@ -17,25 +17,20 @@
             this.Reviews = new HashSet<Review>();
         }
 
-        [Required]
         [StringLength(FirstNameMaxLength)]
-        public string FirstName { get; set; } = null!;
+        public string? FirstName { get; set; } = null!;
 
-        [Required]
         [StringLength(LastNameMaxLength)]
-        public string LastName { get; set; } = null!;
+        public string? LastName { get; set; }
 
-        [Required]
         [StringLength(AddressMaxLength)]
-        public string Address { get; set; } = null!;
+        public string? Address { get; set; }
 
-        [Required]
         [StringLength(CityMaxLength)]
-        public string City { get; set; } = null!;
+        public string? City { get; set; }
 
-        [Required]
         [StringLength(PostalCodeMaxLength)]
-        public string PostalCode { get; set; } = null!;
+        public string? PostalCode { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<Favorite> Favorites { get; set; }

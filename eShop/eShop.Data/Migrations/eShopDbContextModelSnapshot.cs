@@ -32,12 +32,10 @@ namespace eShop.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
@@ -53,12 +51,10 @@ namespace eShop.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
@@ -86,7 +82,6 @@ namespace eShop.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("PostalCode")
-                        .IsRequired()
                         .HasMaxLength(4)
                         .HasColumnType("nvarchar(4)");
 
@@ -122,9 +117,9 @@ namespace eShop.Data.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<double?>("TotalPrice")
+                    b.Property<decimal>("TotalPrice")
                         .HasPrecision(18, 2)
-                        .HasColumnType("float(18)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -256,9 +251,9 @@ namespace eShop.Data.Migrations
                     b.Property<int>("OrderState")
                         .HasColumnType("int");
 
-                    b.Property<double?>("TotalPrice")
+                    b.Property<decimal>("TotalPrice")
                         .HasPrecision(18, 2)
-                        .HasColumnType("float(18)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -310,7 +305,7 @@ namespace eShop.Data.Migrations
                     b.Property<DateTime>("CreatedOn")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 7, 29, 22, 15, 9, 727, DateTimeKind.Local).AddTicks(5859));
+                        .HasDefaultValue(new DateTime(2023, 7, 30, 13, 47, 53, 991, DateTimeKind.Local).AddTicks(3693));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -330,9 +325,9 @@ namespace eShop.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<double?>("Price")
+                    b.Property<decimal>("Price")
                         .HasPrecision(7, 2)
-                        .HasColumnType("float(7)");
+                        .HasColumnType("decimal(7,2)");
 
                     b.Property<int>("Warranty")
                         .HasColumnType("int");
@@ -353,7 +348,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/acer-aspire-3-a315-23-23g-23s-285196.jpg",
                             IsAvailable = true,
                             Name = "Acer Aspire 3 A315-23-R7ZD, 15.6\"",
-                            Price = 450.0,
+                            Price = 450m,
                             Warranty = 24
                         },
                         new
@@ -365,7 +360,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/acer-aspire-5-a517-52-52g-369575.jpg",
                             IsAvailable = true,
                             Name = "Acer Aspire 5 A517-52-34QX, 17.3\", Full HD",
-                            Price = 450.0,
+                            Price = 450m,
                             Warranty = 24
                         },
                         new
@@ -377,7 +372,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/dell-latitude-5430-386927.jpg",
                             IsAvailable = true,
                             Name = "Dell Latitude 5430, 14.0\", Full HD",
-                            Price = 350.5,
+                            Price = 350m,
                             Warranty = 24
                         },
                         new
@@ -389,7 +384,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/hp-15s-fq3000-338974.jpg",
                             IsAvailable = true,
                             Name = "HP 15s-fq5010nu, 15.6\", Full HD",
-                            Price = 550.0,
+                            Price = 550m,
                             Warranty = 24
                         },
                         new
@@ -401,7 +396,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/hp-16-d1000-404950.jpg",
                             IsAvailable = true,
                             Name = "HP Victus 16-d1004nu, 16.1\", Full HD",
-                            Price = 420.0,
+                            Price = 420m,
                             Warranty = 24
                         },
                         new
@@ -413,7 +408,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/lenovo-v15-g3-432234.jpg",
                             IsAvailable = true,
                             Name = "Lenovo V15 G3 ABA, 15.6\", Full HD",
-                            Price = 500.0,
+                            Price = 500m,
                             Warranty = 24
                         },
                         new
@@ -425,7 +420,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/dell-vostro-3020-tower-desktop-462113.jpg",
                             IsAvailable = true,
                             Name = "Dell Vostro 3020 Tower Desktop",
-                            Price = 750.0,
+                            Price = 750m,
                             Warranty = 36
                         },
                         new
@@ -437,7 +432,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/asus-expertcenter-d5-tower-d500tc-396290.jpg",
                             IsAvailable = true,
                             Name = "ASUS ExpertCenter D5 Tower",
-                            Price = 600.0,
+                            Price = 600m,
                             Warranty = 24
                         },
                         new
@@ -449,7 +444,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/lenovo-thinkcentre-neo-50s-sff-388939.jpg",
                             IsAvailable = true,
                             Name = "Lenovo ThinkCentre Neo 50s SFF",
-                            Price = 550.0,
+                            Price = 550m,
                             Warranty = 36
                         },
                         new
@@ -461,7 +456,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/asus-rog-strix-gt15-g15cf-432083.jpg",
                             IsAvailable = true,
                             Name = "ASUS ROG Strix GT15 ",
-                            Price = 2500.0,
+                            Price = 2500m,
                             Warranty = 60
                         },
                         new
@@ -473,7 +468,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/lenovo-legion-t5-26iob6-334470.jpg",
                             IsAvailable = true,
                             Name = "Lenovo Legion T5 Tower",
-                            Price = 2000.0,
+                            Price = 2000m,
                             Warranty = 24
                         },
                         new
@@ -485,7 +480,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/asus-rog-strix-g35ca-451273.jpg",
                             IsAvailable = true,
                             Name = "ASUS ROG Strix G35CA",
-                            Price = 3200.0,
+                            Price = 3200m,
                             Warranty = 36
                         },
                         new
@@ -497,7 +492,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/monitor-led-dell-s2421h-23-8-ips-anti-glare-1920x1-290329.jpg",
                             IsAvailable = true,
                             Name = "Dell S2421H 23.8\"",
-                            Price = 580.0,
+                            Price = 580m,
                             Warranty = 36
                         },
                         new
@@ -509,7 +504,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/21-5-acer-v226hqlbbi-433345.jpg",
                             IsAvailable = true,
                             Name = "Acer V226HQLBbi 21.5\"",
-                            Price = 600.0,
+                            Price = 600m,
                             Warranty = 24
                         },
                         new
@@ -521,7 +516,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/hp-m24f-fhd-23-8-monitor-black-2y-warranty-362696.jpg",
                             IsAvailable = true,
                             Name = "HP M24fw 23.8\"",
-                            Price = 150.0,
+                            Price = 150m,
                             Warranty = 26
                         },
                         new
@@ -533,7 +528,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/23-8-lenovo-d24-40-67a2kac6eu-438170.jpg",
                             IsAvailable = true,
                             Name = "Lenovo D24-40 23.8\"",
-                            Price = 105.0,
+                            Price = 105m,
                             Warranty = 60
                         },
                         new
@@ -545,7 +540,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/27-lg-ultragear-27gn800p-b-473256.jpg",
                             IsAvailable = true,
                             Name = "LG UltraGear 27GN800P 27\"",
-                            Price = 320.0,
+                            Price = 320m,
                             Warranty = 36
                         },
                         new
@@ -557,7 +552,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/23-8-philips-243v7qdsb-337418.jpg",
                             IsAvailable = true,
                             Name = "Philips 243V7QDSB 23.8\"",
-                            Price = 320.0,
+                            Price = 320m,
                             Warranty = 36
                         },
                         new
@@ -569,7 +564,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/xerox-phaser-3020bi-100185.jpg",
                             IsAvailable = true,
                             Name = "Xerox Phaser 3020BI",
-                            Price = 108.0,
+                            Price = 108m,
                             Warranty = 24
                         },
                         new
@@ -581,7 +576,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/brother-hl-1222we-laser-printer-179988.jpg",
                             IsAvailable = true,
                             Name = "Brother HL-1222WE",
-                            Price = 110.0,
+                            Price = 110m,
                             Warranty = 24
                         },
                         new
@@ -593,7 +588,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/canon-pixma-ix6850-142834.jpg",
                             IsAvailable = true,
                             Name = "Canon PIXMA iX6850",
-                            Price = 260.0,
+                            Price = 260m,
                             Warranty = 24
                         },
                         new
@@ -605,7 +600,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/hp-laserjet-m110we-455714.jpg",
                             IsAvailable = true,
                             Name = "HP LaserJet M110we",
-                            Price = 95.0,
+                            Price = 95m,
                             Warranty = 12
                         },
                         new
@@ -617,7 +612,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/hp-color-laserjet-pro-m454dw-printer-235409.jpg",
                             IsAvailable = true,
                             Name = "HP LaserJet Pro M454dw",
-                            Price = 320.0,
+                            Price = 320m,
                             Warranty = 36
                         },
                         new
@@ -629,7 +624,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/canon-pixma-g1430-473878.jpg",
                             IsAvailable = true,
                             Name = "Canon PIXMA G1430",
-                            Price = 130.0,
+                            Price = 130m,
                             Warranty = 24
                         },
                         new
@@ -641,7 +636,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/ssd-wd-blue-2-5-500gb-sata-6gb-s-392474.jpg",
                             IsAvailable = true,
                             Name = "500GB SSD WD Blue WDS500G3B0A",
-                            Price = 30.0,
+                            Price = 30m,
                             Warranty = 60
                         },
                         new
@@ -653,7 +648,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/128gb-ssd-silicon-power-ace-a55-187308.jpg",
                             IsAvailable = true,
                             Name = "512GB SSD Silicon Power Ace A55",
-                            Price = 30.0,
+                            Price = 30m,
                             Warranty = 60
                         },
                         new
@@ -665,7 +660,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/enterprise-ssd-samsung-970-evo-plus-series-1-tb-3d-222588.jpg",
                             IsAvailable = true,
                             Name = "1TB SSD Samsung 970 EVO Plus0",
-                            Price = 70.0,
+                            Price = 70m,
                             Warranty = 60
                         },
                         new
@@ -677,7 +672,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/ssd-wd-blue-m-2-1tb-pcie-gen3-357316.jpg",
                             IsAvailable = true,
                             Name = "1TB SSD WD Blue SN570",
-                            Price = 95.0,
+                            Price = 95m,
                             Warranty = 65
                         },
                         new
@@ -689,7 +684,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/solid-state-drive-ssd-samsung-870-evo-sata-2-5-rdq-303041.jpg",
                             IsAvailable = true,
                             Name = "1TB SSD Samsung 870 EVO",
-                            Price = 75.0,
+                            Price = 75m,
                             Warranty = 60
                         },
                         new
@@ -701,7 +696,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/wd-green-sata-1tb-ssd-2-5inch-internal-444549.jpg",
                             IsAvailable = true,
                             Name = "1TB SSD WD Green",
-                            Price = 90.0,
+                            Price = 90m,
                             Warranty = 36
                         },
                         new
@@ -713,7 +708,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/8g-ddr5-5600-kingst-expo-beast-449536.jpg",
                             IsAvailable = true,
                             Name = "8GB DDR5 5600 Kingston FURY Beast",
-                            Price = 40.0,
+                            Price = 40m,
                             Warranty = 60
                         },
                         new
@@ -725,7 +720,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/8gb-ddr4-3200-adata-xpg-d10-443745.jpg",
                             IsAvailable = true,
                             Name = "8GB DDR4 3200 ADATA XPG",
-                            Price = 20.0,
+                            Price = 20m,
                             Warranty = 60
                         },
                         new
@@ -737,7 +732,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/2x8g-ddr4-3600-adata-xpg-db10-353858.jpg",
                             IsAvailable = true,
                             Name = "2x8GB DDR4 3600 ADATA XPG",
-                            Price = 70.0,
+                            Price = 70m,
                             Warranty = 96
                         },
                         new
@@ -749,7 +744,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/pamet-g-skill-aegis-16gb-ddr4-pc4-25600-3200mhz-cl-287577.jpg",
                             IsAvailable = true,
                             Name = "16GB DDR4 3200 G.SKILL Aegis",
-                            Price = 45.0,
+                            Price = 45m,
                             Warranty = 60
                         },
                         new
@@ -761,7 +756,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/8gb-ddr3-1600-apacer-149180.jpg",
                             IsAvailable = true,
                             Name = "8GB DDR3 1600 Apacer",
-                            Price = 15.0,
+                            Price = 15m,
                             Warranty = 60
                         },
                         new
@@ -773,7 +768,7 @@ namespace eShop.Data.Migrations
                             ImagePath = "images/2x16gb-ddr5-5200-adata-lancer-rgb-366691.jpg",
                             IsAvailable = true,
                             Name = "2x16GB DDR5 5200 ADATA Lancer RGB",
-                            Price = 120.0,
+                            Price = 120m,
                             Warranty = 96
                         });
                 });

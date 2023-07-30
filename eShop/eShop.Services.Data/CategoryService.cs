@@ -1,8 +1,33 @@
 ﻿namespace eShop.Services.Data
 {
-    using eShop.Services.Data.Interfaces;
+    using Microsoft.EntityFrameworkCore;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
+    using Interfaces;
+    using eShop.Data;
+    using eShop.Web.ViewModels.Category;
 
     public class CategoryService : ICategoryService
     {
+        private readonly eShopDbContext dbContext;
+        public CategoryService(eShopDbContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
+        public async Task<IEnumerable<ProductSelectCategoryFormModel>> AllCategoriesAsync()
+        {
+            IEnumerable<ProductSelectCategoryFormModel> allCategories = await this.dbContext
+                .Categories
+                .AsNoTracking()
+                .Select(c => new ProductSelectCategoryFormModel
+                {
+                    Id = c.Id,
+                    Name = c.Name
+                })
+                .ToArrayAsync();
+
+            return allCategories;
+        }
     }
 }
